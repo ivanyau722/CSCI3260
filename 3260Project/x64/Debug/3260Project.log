@@ -1,0 +1,6 @@
+﻿  main.cpp
+C:\Users\wrain\source\repos\ivanyau722\CSCI3260\3260Project\main.cpp(252,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\wrain\source\repos\ivanyau722\CSCI3260\3260Project\main.cpp(903,38): warning C4267: '=': conversion from 'size_t' to 'GLuint', possible loss of data
+C:\Users\wrain\source\repos\ivanyau722\CSCI3260\3260Project\main.cpp(955,38): warning C4267: '=': conversion from 'size_t' to 'GLuint', possible loss of data
+C:\Users\wrain\source\repos\ivanyau722\CSCI3260\3260Project\main.cpp(1043,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  3260Project.vcxproj -> C:\Users\wrain\source\repos\ivanyau722\CSCI3260\x64\Debug\3260Project.exe

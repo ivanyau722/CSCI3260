@@ -1,3 +1,0 @@
-C:/Users/wrain/source/repos/ivanyau722/CSCI3260/Asm2/Dependencies/glm/out/build/x64-Debug (default)/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_609ad.dir
-C:/Users/wrain/source/repos/ivanyau722/CSCI3260/Asm2/Dependencies/glm/out/build/x64-Debug (default)/CMakeFiles/CMakeTmp/CMakeFiles/edit_cache.dir
-C:/Users/wrain/source/repos/ivanyau722/CSCI3260/Asm2/Dependencies/glm/out/build/x64-Debug (default)/CMakeFiles/CMakeTmp/CMakeFiles/rebuild_cache.dir
