@@ -222,7 +222,17 @@ void keyboard(unsigned char key, int x, int y)
 		EntityList[SpaceCraft]->location =
 			vec3(glm::translate(glm::mat4(), vec3(EntityList[SpaceCraft]->location)) * EntityList[SpaceCraft]->transform *  glm::vec4(0.0f, 0.0f, FLY_SPEED, 1.0f));
 	}
-
+	else if (key == 'f')
+		lightPosition = vec3(glm::translate(glm::mat4(), lightPosition) * EntityList[SpaceCraft]->transform * glm::vec4(-FLY_SPEED, 0.0f, 0.0f, 1.0f));
+	
+	else if (key == 'h')
+		lightPosition = vec3(glm::translate(glm::mat4(), lightPosition) * EntityList[SpaceCraft]->transform * glm::vec4(FLY_SPEED, 0.0f, 0.0f, 1.0f));
+	
+	else if (key == 'g')
+		lightPosition = vec3(glm::translate(glm::mat4(), lightPosition) * EntityList[SpaceCraft]->transform * glm::vec4(0.0f, 0.0f, FLY_SPEED, 1.0f));
+	
+	else if (key == 't')
+		lightPosition = vec3(glm::translate(glm::mat4(), lightPosition) * EntityList[SpaceCraft]->transform * glm::vec4(0.0f, 0.0f, -FLY_SPEED, 1.0f));
 
 
 }
@@ -252,7 +262,6 @@ void PassiveMouse(int x, int y)
 	float angleX = moveX / (glutGet(GLUT_WINDOW_WIDTH) / 2.0) * 90.0;
 	glutWarpPointer(glutGet(GLUT_WINDOW_WIDTH) / 2, glutGet(GLUT_WINDOW_HEIGHT) / 2);
 	EntityList[SpaceCraft]->transform *= glm::rotate(glm::mat4(1.0f), glm::radians(angleX), glm::vec3(0.0f, invertMouse, 0.0f));
-	//printf("%d %.2f\n", moveX, angleX);
 }
 
 bool loadOBJ(
@@ -1073,8 +1082,6 @@ void initialiseEntities() {
 		ChickenEnd = initEntity(0, 6, 70 + 30 * i, +13, -60, glm::scale(glm::mat4(), vec3(0.01, 0.01, 0.01)), 2.0f, 2);
 	}
 
-	//glm::scale(glm::mat4(), vec3(0.15,0.15,0.15))	*
-
 }
 
 int checkCollision(entity* e1, entity* e2) {
@@ -1104,7 +1111,6 @@ int handleCollision(entity* primary, entity* secondary) {
 				primary->texture = 1;
 			}
 		}
-		
 		secondary->status = 0;
 	}
 
